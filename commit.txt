@@ -1,0 +1,10 @@
+Tipe:
+
+1. feat: Fitur baru yang ditambahkan.
+2. fix: Perbaikan bug.
+3. chore: Pekerjaan kecil atau pemeliharaan yang tidak mengubah fungsionalitas perangkat lunak.
+4. docs: Perubahan dalam dokumentasi.
+5. style: Perubahan terkait gaya kode (seperti spasi, format, atau pemformatan).
+6. refactor: Perubahan pada kode yang tidak mengubah fungsionalitas tetapi meningkatkan struktur kode.
+7. test: Penambahan atau perbaikan pengujian.
+8. perf: Perubahan yang meningkatkan performa aplikasi.

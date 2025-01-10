@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- JS  -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FA -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="min-w-full min-h-screen flex justify-center items-center bg-gray-500 relative"
+    >
+      <!-- Ruangan -->
+      <div class="border border-white grid grid-cols-2">
+        <!-- Ruangan 1 -->
+        <div
+          id="ruangan1"
+          class="h-full w-full space-y-7 p-5 flex flex-col items-center justify-center border border-white"
+        >
+          <div>
+            <p class="text-white text-center text-2xl fw-bold">Ruangan 1</p>
+          </div>
+          <div class="flex flex-row">
+            <div class="lampuContainer"></div>
+            <div class="lampuContainer"></div>
+            <div class="lampuContainer"></div>
+          </div>
+        </div>
+        <!-- End Ruangan 1 -->
+
+        <!-- Ruangan 2 -->
+        <div
+          id="ruangan2"
+          class="h-full w-full space-y-7 p-5 flex flex-col items-center justify-center border border-white"
+        >
+          <div>
+            <p class="text-white text-center text-2xl fw-bold">Ruangan 2</p>
+          </div>
+          <div class="flex flex-row">
+            <div class="lampuContainer"></div>
+          </div>
+        </div>
+        <!-- End Ruangan 2 -->
+
+        <!-- Ruangan 3 -->
+        <div
+          id="ruangan3"
+          class="h-full w-full p-5 space-y-7 flex flex-col items-center justify-center border border-white"
+        >
+          <div>
+            <p class="text-white text-center text-2xl fw-bold">Ruangan 3</p>
+          </div>
+          <div class="flex flex-row">
+            <div class="lampuContainer"></div>
+            <div class="lampuContainer"></div>
+          </div>
+        </div>
+        <!-- End Ruangan 3 -->
+
+        <!-- Ruangan 4 -->
+        <div
+          id="ruangan4"
+          class="h-full w-full space-y-7 p-5 flex flex-col items-center justify-center border border-white"
+        >
+          <div>
+            <p class="text-white text-center text-2xl fw-bold">Ruangan 4</p>
+          </div>
+          <div class="flex flex-row">
+            <div class="lampuContainer"></div>
+            <div class="lampuContainer"></div>
+            <div class="lampuContainer"></div>
+            <div class="lampuContainer"></div>
+          </div>
+        </div>
+        <!-- End Ruangan 4 -->
+      </div>
+      <!-- End Ruangan -->
+
+      <!-- Icon  -->
+      <div class="absolute top-1/2 right-5 lg:right-28 -translate-y-1/2 z-10">
+        <div class="relative">
+          <i
+            id="iconSetting"
+            class="fa-solid fa-gear text-white text-4xl cursor-pointer"
+          ></i>
+          <!-- Box -->
+          <div
+            id="boxSaklar"
+            class="bg-white flex flex-col absolute top-1/2 right-10 -translate-y-1/2 z-10 w-44 hidden"
+          >
+            <div class="bg-gray-300 p-2">
+              <p class="text-center">Saklar</p>
+            </div>
+
+            <div class="flex flex-col space-y-4 p-3">
+              <!-- Ruangan 1 -->
+              <div class="flex flex-row justify-center items-center space-x-5">
+                <p>Ruangan 1</p>
+                <!-- Toggle -->
+                <div class="flex items-center">
+                  <input type="checkbox" id="checkboxIcon1" class="hidden" />
+                  <label
+                    for="checkboxIcon1"
+                    class="flex items-center cursor-pointer"
+                  >
+                    <div
+                      class="w-12 h-6 bg-gray-300 rounded-full p-1 transition-all duration-300 ease-in-out"
+                    >
+                      <div
+                        class="w-4 h-4 rounded-full bg-white transition-all duration-300 ease-in-out"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggle -->
+              </div>
+              <!-- End Ruangan 1 -->
+
+              <!-- Ruangan 2 -->
+              <div class="flex flex-row justify-center items-center space-x-5">
+                <p>Ruangan 2</p>
+                <!-- Toggle -->
+                <div class="flex items-center">
+                  <input type="checkbox" id="checkboxIcon2" class="hidden" />
+                  <label
+                    for="checkboxIcon2"
+                    class="flex items-center cursor-pointer"
+                  >
+                    <div
+                      class="w-12 h-6 bg-gray-300 rounded-full p-1 transition-all duration-300 ease-in-out"
+                    >
+                      <div
+                        class="w-4 h-4 rounded-full bg-white transition-all duration-300 ease-in-out"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggle -->
+              </div>
+              <!-- End Ruangan 2 -->
+
+              <!-- Ruangan 3 -->
+              <div class="flex flex-row justify-center items-center space-x-5">
+                <p>Ruangan 3</p>
+                <!-- Toggle -->
+                <div class="flex items-center">
+                  <input type="checkbox" id="checkboxIcon3" class="hidden" />
+                  <label
+                    for="checkboxIcon3"
+                    class="flex items-center cursor-pointer"
+                  >
+                    <div
+                      class="w-12 h-6 bg-gray-300 rounded-full p-1 transition-all duration-300 ease-in-out"
+                    >
+                      <div
+                        class="w-4 h-4 rounded-full bg-white transition-all duration-300 ease-in-out"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggle -->
+              </div>
+              <!-- End Ruangan 3 -->
+
+              <!-- Ruangan 4 -->
+              <div class="flex flex-row justify-center items-center space-x-5">
+                <p>Ruangan 4</p>
+                <!-- Toggle -->
+                <div class="flex items-center">
+                  <input type="checkbox" id="checkboxIcon4" class="hidden" />
+                  <label
+                    for="checkboxIcon4"
+                    class="flex items-center cursor-pointer"
+                  >
+                    <div
+                      class="w-12 h-6 bg-gray-300 rounded-full p-1 transition-all duration-300 ease-in-out"
+                    >
+                      <div
+                        class="w-4 h-4 rounded-full bg-white transition-all duration-300 ease-in-out"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+                <!-- End Toggle -->
+              </div>
+              <!-- End Ruangan 4 -->
+            </div>
+          </div>
+          <!-- End Box -->
+        </div>
+      </div>
+      <!-- End Icon -->
+    </div>
+  </body>
+</html>
