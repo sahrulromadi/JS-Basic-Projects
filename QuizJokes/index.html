@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Jokes</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div
+      class="min-h-screen max-w-full flex items-center justify-center text-center bg-primary relative"
+    >
+      <!-- modal -->
+      <div
+        id="modal"
+        class="absolute bg-accent py-10 w-1/2 text-center space-y-5 hidden"
+      >
+        <p class="text-xl">Status Jawaban</p>
+        <button id="ok" class="bg-primary text-white px-10 py-2 rounded-xl">
+          Oke
+        </button>
+      </div>
+      <!-- end modal -->
+      <!-- bar -->
+      <div id="bar" class="absolute top-0 right-0 m-5 flex gap-5">
+        <div class="bg-white p-2 rounded-xl order-2 w-8">
+          <p id="countdown"></p>
+        </div>
+      </div>
+      <!-- end bar -->
+      <div id="content" class="p-10 bg-white space-y-5 rounded-2xl">
+        <p id="question">lorem ipsum</p>
+        <div class="flex gap-x-3">
+          <form>
+            <input
+              type="text"
+              name="answer"
+              id="answer"
+              placeholder="Ketik jawaban disini!"
+              class="bg-secondary text-white p-2 border border-[#444444] rounded-lg"
+            />
+            <button type="submit" class="bg-accent px-5 py-2 rounded-lg">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
