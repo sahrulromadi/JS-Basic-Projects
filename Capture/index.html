@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capture App</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- HTML2Canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gray-50">
+    <header class="p-4 bg-teal-500 flex justify-center items-center text-white">
+      <div class="ms-auto">
+        <p class="text-center text-2xl font-semibold">Capture App</p>
+      </div>
+      <div id="divIcon" class="ms-auto">
+        <a class="text-2xl" download>🌀</a>
+      </div>
+    </header>
+
+    <main class="flex flex-col flex-1 justify-center items-center bg-gray-100">
+      <div
+        id="content"
+        class="mb-10 px-8 py-6 bg-white shadow-lg rounded-xl text-center space-y-5 max-w-md w-full flex flex-col items-center justify-center"
+      >
+        <p id="quote" class="text-xl font-bold text-gray-800">
+          Kimetsu No Yaiba
+        </p>
+        <p id="author" class="text-md text-gray-600">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        </p>
+        <img
+          src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/140/2024/07/05/wp4317866-kimetsu-no-yaiba-wallpapers-1710431953.jpg"
+          alt="image"
+          class="w-32 h-32 object-contain rounded-lg shadow-md"
+          crossorigin="anonymous"
+        />
+      </div>
+      <button
+        type="submit"
+        class="px-8 py-3 rounded-xl bg-indigo-500 text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200"
+      >
+        Generate
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
