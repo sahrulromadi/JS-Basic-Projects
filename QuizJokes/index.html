@@ -16,6 +16,21 @@
     <div
       class="min-h-screen max-w-full flex items-center justify-center text-center bg-primary relative"
     >
+      <!-- start -->
+      <div
+        id="start"
+        class="absolute bg-accent py-10 w-1/2 text-center space-y-5"
+      >
+        <p class="text-xl">Mulai game?</p>
+        <button
+          id="startButton"
+          class="bg-primary text-white px-10 py-2 rounded-xl"
+        >
+          Start
+        </button>
+      </div>
+      <!-- end start -->
+
       <!-- modal -->
       <div
         id="modal"
@@ -27,25 +42,33 @@
         </button>
       </div>
       <!-- end modal -->
+
       <!-- bar -->
-      <div id="bar" class="absolute top-0 right-0 m-5 flex gap-5">
+      <div id="bar" class="absolute top-0 right-0 m-5 flex gap-5 hidden">
         <div class="bg-white p-2 rounded-xl order-2 w-8">
           <p id="countdown"></p>
         </div>
       </div>
       <!-- end bar -->
-      <div id="content" class="p-10 bg-white space-y-5 rounded-2xl">
-        <p id="question">lorem ipsum</p>
-        <div class="flex gap-x-3">
-          <form>
+
+      <div
+        id="content"
+        class="p-10 bg-white space-y-5 rounded-2xl hidden w-1/2"
+      >
+        <p id="question" class="text-wrap text-xl">lorem ipsum</p>
+        <div class="flex gap-x-3 items-center w-full">
+          <form class="w-full flex gap-x-3">
             <input
               type="text"
               name="answer"
               id="answer"
               placeholder="Ketik jawaban disini!"
-              class="bg-secondary text-white p-2 border border-[#444444] rounded-lg"
+              class="bg-secondary text-white p-2 border border-[#444444] rounded-lg w-full"
             />
-            <button type="submit" class="bg-accent px-5 py-2 rounded-lg">
+            <button
+              type="submit"
+              class="bg-accent text-white px-5 py-2 rounded-lg w-1/3"
+            >
               Submit
             </button>
           </form>
