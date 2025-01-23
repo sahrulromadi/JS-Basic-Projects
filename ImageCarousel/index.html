@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="nameApp">Image Carousel App</h1>
+        <h3 class="desc">Follow for more projects</h3>
+      </header>
+
+      <div class="carouselContainer">
+        <div class="carouselSlide">
+          <img
+            src="https://i.pinimg.com/originals/aa/ff/9c/aaff9c845772e830e8e025f0113ff002.jpg"
+            alt="Image 1"
+          />
+          <img
+            src="https://i.pinimg.com/originals/8f/ab/e5/8fabe5c85c1dc0c125cb21ded4e7a159.jpg"
+            alt="Image 2"
+          />
+          <img
+            src="https://i.pinimg.com/originals/a7/bf/c5/a7bfc56cfa910b4df940a063f0736510.jpg"
+            alt="Image 3"
+          />
+        </div>
+
+        <!-- Navigasi Button Start -->
+        <button class="prevBtn">&#10094;</button>
+        <button class="nextBtn">&#10095;</button>
+        <!-- Navigasi Button End -->
+
+        <!-- Indicator Start -->
+        <div class="carouselIndicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+        <!-- Indicator End -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

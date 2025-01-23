@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="calculatorDisplay">
+        <input type="number" name="" id="hasil" value="0" disabled />
+      </div>
+
+      <div class="calculatorButtons">
+        <!-- Operator Start -->
+        <button class="operator" value="%">%</button>
+        <button class="operator" value="√">√</button>
+        <button class="operator" value="/">&divide;</button>
+        <button class="operator" value="*">&times;</button>
+        <!-- Operator End -->
+
+        <!-- Numbers Start -->
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="operator" value="-">-</button>
+
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button class="operator" value="+">+</button>
+
+        <button value="3">3</button>
+        <button value="2">2</button>
+        <button value="1">1</button>
+        <button class="samaDengan" value="=">=</button>
+        <!-- Numbers End -->
+
+        <!-- Zero Button Start -->
+        <button class="zero" value="0">0</button>
+        <button class="decimal" value=".">.</button>
+        <button class="allClear" value="AC">AC</button>
+        <!-- Zero Button End -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
